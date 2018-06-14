@@ -10,7 +10,7 @@
 
 ## Background
 
-The goal of this project was to predict the occurrence of West Nile Virus (WNV) in Chicago, IL. We obtained data from the City of Chicago hosted as part of a Kaggle competition [here.](https:/www.kaggle.com/c/predict-west-nile-virus/). The data was obtained in 3 parts as follows: 
+The goal of this project was to predict the occurrence of West Nile Virus (WNV) in Chicago, IL. We obtained data from the City of Chicago hosted as part of a Kaggle competition [here.](https:/www.kaggle.com/c/predict-west-nile-virus/) The data was obtained in 3 separate files as described below: 
 
 1) A dataset containing location data for traps placed around Chicago to monitor mosquito populations. Samples from these traps were collected by city workers and tested for the presence of WNV.
 2) A dataset containing information about the weather occurring in the months when the mosquito data was being collected.
