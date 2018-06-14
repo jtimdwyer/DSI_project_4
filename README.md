@@ -22,7 +22,7 @@ Our goal was to perform analysis on the provided data and create machine learnin
 
 ### Trap Data
 
-The training dataset contained no missing values. We collapsed the number of mosquito species by combining species who were infrequent into a category named "Culex Other." (The infrequent species accounted for only 3% of all observations in the training set.) We chose to impute the most common species in the Chicago region, C. pipiens, for any observations marked as 'Unspecified' based on rationale presented [here](http://www.ajtmh.org/content/journals/10.4269/ajtmh.2009.80.268#html_fulltext) by Hamer et. al: 
+The training dataset contained no missing values. We collapsed the number of mosquito species by combining species who were infrequent into a category named "Culex Other." (The infrequent species accounted for only 3% of all observations in the training set.) We chose to impute the most common species in the Chicago region, C. pipiens, for any observations marked as 'Unspecified' based on rationale presented [here](http://www.ajtmh.org/content/journals/10.4269/ajtmh.2009.80.268#html_fulltext) by Hamer et. al.
 
 ### Weather Data
 
