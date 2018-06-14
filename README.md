@@ -34,4 +34,8 @@ In order to merge the weather data and the training data, we engineered a featur
 
 We created a number of plots to help us visually interpret our data. By graphing the cases of West Nile Virus against the latitude of the traps, we determined that there were more cases of the West Nile Virus on the north side of the city. Looking at weather data plotted against the presence of West Nile Virus, mosquitos were present more in days with hotter temperatures, and higher humidities. 
 
+#### Modeling
+
+We tested a number of models with the goal of predicting whether these mosquito traps registered the West Nile Virus, in the even years not provided to us. Our metric for scoring our model was the ROC-AUC curve. The ROC-AUC curve is a plot of the true positive rate against the false positive, used to determine the accuracy of the model. 
+
 
