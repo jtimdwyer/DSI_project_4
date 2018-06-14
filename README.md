@@ -12,7 +12,7 @@ DSI project 4 - West Nile Virus
 
 #### Background
 
-This project is based off of a Kaggle, with the directive being to predict West Nile Virus occurrances in mosquitos across the city of Chicago. We received three data sets for this project: a dataset marking the traps which were placed around Chicago to monitor mosquitos and check for the presence of West Nile Virus (split into a training set and a testing set), a dataset containing information about the weather occurring in the timeframe in which the mosquito data was being collected, and a dataset indicating the dates and locations where airborne pesticides were sprayed by the city. Our goal is to perform analysis on the data given, and create a model to accurately predict the presence of West Nile Virus in a given mosquito trap in Chicago.
+This project is based off of a Kaggle competition, with the directive being to predict West Nile Virus occurrances in mosquitos across the city of Chicago. We received three data sets for this project: a dataset marking the traps which were placed around Chicago to monitor mosquitos and check for the presence of West Nile Virus (split into a training set and a testing set), a dataset containing information about the weather occurring in the timeframe in which the mosquito data was being collected, and a dataset indicating the dates and locations where airborne pesticides were sprayed by the city. Our goal is to perform analysis on the data given, and create a model to accurately predict the presence of West Nile Virus in a given mosquito trap in Chicago.
 
 #### Data Cleaning
 
@@ -32,8 +32,15 @@ The Time column of the Spray dataset had many null values, so we dropped the col
 
 In order to merge the weather data and the training data, we engineered a feature which indicated the closest station to a trap. We then merged the two datasets on the corresponding dates and columns. We merged the spray data in on the union of our trap ids and the dates.
 
-##### Exploratory Data Analysis
+Speaking on the test dataset provided by Kaggle, we spent time adjusting the testing data to match up with our set of training data. This process entailed merging the dataset with our weather and spray features, and accounting for any variables not represented in the training data.
+
+#### Exploratory Data Analysis
 
 We created a number of plots to help us visually interpret our data. By graphing the cases of West Nile Virus against the latitude of the traps, we determined that there were more cases of the West Nile Virus on the north side of the city. Looking at weather data plotted against the presence of West Nile Virus, the virus,mosquitos were present more in days with hotter temperatures, and higher humidities. 
+
+
+#### Modeling
+
+We tested a number of models with the goal of predicting whether these mosquito traps registered the West Nile Virus, in the even years not provided to us. Our metric for scoring our model was the ROC-AUC curve. The ROC-AUC curve is a plot of the true positive rate against the false positive, used to determine the accuracy of the model. 
 
 
