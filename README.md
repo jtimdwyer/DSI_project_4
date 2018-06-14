@@ -38,7 +38,7 @@ In order to merge the weather data and the trap data, we engineered a feature `s
 
 ## Exploratory Data Analysis
 
-We created a number of plots to help us visually inspect our data (found in the EDA notebook). By graphing the cases of West Nile Virus against the latitudes where traps were placed, we determined that there were more cases of the West Nile Virus on the north side of the city. Inspection of weather data plotted against the presence of WNV suggested that mosquitos with WNV were more likely to be trapped on days with higher average temperatures and lower humidities. 
+We created a number of plots to visually inspect our data, found in the EDA notebook. By graphing the cases of West Nile Virus against the latitudes where traps were placed, we determined that there were more cases of the West Nile Virus on the north side of the city. Inspection of weather data plotted against the presence of WNV suggested that mosquitos with WNV were more likely to be trapped on days with higher average temperatures and lower humidities. 
 
 ## Modeling
 
