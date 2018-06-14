@@ -16,7 +16,7 @@ The goal of this project was to predict the occurrence of West Nile Virus in Chi
 
 ### Training Data
 
-The training data contained no missing data. We collapsed the number of mosquito species by putting all the species of mosquitos who were infrequent into a category named "Culex Other." (The infrequent species together totaled ~3% of the entries) We chose to inpute any unspecified mosquitos with the most common species in the Chicago region, C. pipiens based on data presented here by Hamer et. al: http://www.ajtmh.org/content/journals/10.4269/ajtmh.2009.80.268#html_fulltext
+The training data contained no missing data. We collapsed the number of mosquito species by putting all the species of mosquitos who were infrequent into a category named "Culex Other." (The infrequent species together totaled ~3% of the entries) We chose to inpute any unspecified mosquitos with the most common species in the Chicago region, C. pipiens based on data presented [here](http://www.ajtmh.org/content/journals/10.4269/ajtmh.2009.80.268#html_fulltext) by Hamer et. al: 
 
 ### Weather Data
 
