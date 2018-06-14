@@ -45,4 +45,8 @@ Our main modeling strategy was to vary the size of the feature space of the mode
 ## Conclusions
 
 
+#### Modeling
+
+We tested a number of models with the goal of predicting whether these mosquito traps registered the West Nile Virus, in the even years not provided to us. Our metric for scoring our model was the ROC-AUC curve. The ROC-AUC curve is a plot of the true positive rate against the false positive, used to determine the accuracy of the model. 
+
 
