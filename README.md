@@ -58,7 +58,6 @@ Our primary strategy for model optimization was to vary the size of the feature 
 
 ## Conclusions
 
-<<<<<<< HEAD
 model|Kaggle Private Score|Kaggle Public score | Local Training Score | Local Validation Score
 --|--|--|--|--|
 Logistic Regression| .5| .5| .72451| .69808
@@ -84,9 +83,6 @@ The huge disparity between our local scores and the Kaggle scores indicate that 
 
 
 ## Recommendations 
-until such time as a more suitable candidate can be constructed we suggest using the provided Logistic Regression (w/PCA) model for deciding if a trap should be sprayed. Beyond that, we strongly believe that further investigation of different methods for modelung this data should yield much better results. 
-=======
+
+Until such time as a more suitable candidate can be constructed we suggest using the provided Logistic Regression (w/PCA) model for deciding if a trap should be sprayed. Beyond that, we strongly believe that further investigation of different methods for modelung this data should yield much better results. 
 Our best performing model was a logistic regression model using 7 features created by principal component analysis (ROC AUC = 0.63). This model not only resulted in the highest ROC AUC when predicting WNV presence for the test data but also was incredibly fast to fit owing to its low feature count. 
-
->>>>>>> 45db5146a8a5b7abd3f4e7c3826b702816a35dc1
-
