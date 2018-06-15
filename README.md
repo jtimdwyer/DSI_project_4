@@ -51,4 +51,30 @@ Our main modeling strategy was to vary the size of the feature space of the mode
 
 ## Conclusions
 
+model|Kaggle Private Score|Kaggle Public score | Local Training Score | Local Validation Score
+--|--|--|--|--|
+Logistic Regression| .5| .5| .72451| .69808
+Logistic Regression (w/PCA)|0.55512 |.55122 | .69745| .71369
+AdaBoost Logistic Regression| .51699|.52268 | .69758 | .71585
+KNN |.5| .5 | .76534 | .65787
+Decision Tree|.5|.5 | .82956 | .66636
+Decision Tree (restricted features)|.5|.5 | .72648 | .69755
+Random Forest (restricted features)|.50644|.49996 | .92380| .78396
+
+The scores here are AUC ROC scores. These numbers establish how well a model deals with, as a threshold for predicting the presence of West Nile is increased, the trade off between True and False positives. Namely as the threshold increases, there are fewer predicted positives and the AUC ROC score is a numeric measure of this trade off. A score of $.5$ indicates that the model is doing no better than truly guessing. 
+
+The huge disparity between our local scores and the Kaggle scores indicate that our models are almost entirely modeling noise. It is our recommendation that the project continue in one or more of the following ways:
+
+1. Restructure the data
+> Since our local score are so different than the Kaggle scores, we are likely just modeling the noise present in the data. More work should be done to address this. For example we might try to adjust the way the weather data is taken into account for each observation. Currently we are assigning weather features to a given trap based on which airport it is closest to. This could be causing an issue as many of the traps are not particularly close to either airport. One approach would be to simply average the weather information, perhaps weighted by distance to the given source of the measurement. Another option would be just to add the weather information for both airports to each of the observations, completely ignoring the distance to the source.
+
+1. Get more, cleaner data
+> There is a fair amount of missing data in the weather information, so it would probably be worthwhile to track down the true missing values, if they can be found. 
+ 
+1. Use the spray data as an intermediary step rather than a feature
+> Currenlty we are using the spray data as an engineered feature indicating whether a trap has ever been sprayed (we consider a trap to have been sprayed if there is a spray location within an eighth of a mile). This is certainly straightforward but possibly too coarse and could be a large source of noise. Alternatively we could, as an intermediary step, create a classificaiton model that tries to predict whether or not a trap was sprayed on other days based on the weather. This would also run the risk of being very noisy.
+
+
+## Recommendations 
+until such time as a more suitable candidate can be constructed we suggest using the provided Logistic Regression (w/PCA) model for deciding if a trap should be sprayed. Beyond that, we strongly believe that further investigation of different methods for modelung this data should yield much better results. 
 
