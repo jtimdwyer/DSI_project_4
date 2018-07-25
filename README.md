@@ -1,4 +1,5 @@
-# DSI Project 4 - Predicting West Nile Virus in Chicago
+#  Predicting West Nile Virus in Chicago
+_By Jordan Bailey, George Dewey and Tim Dwyer_
 
 ## Table of Contents
 
